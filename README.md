@@ -58,10 +58,36 @@ AppleTemplate/
 
 ### Setup
 
-1. Clone the repository
-2. Open `AppleTemplate.xcodeproj` in Xcode
-3. Select your target platform
-4. Build and run
+This project uses [XcodeGen](https://github.com/yonaskolb/XcodeGen) to generate the `.xcodeproj` file dynamically.
+
+**Quick start (interactive):**
+```bash
+./setup.sh
+```
+You'll be prompted to enter a project name (default: `AppleTemplate`).
+
+**One-liner (non-interactive):**
+```bash
+./setup.sh MyAppName
+```
+
+This will:
+1. Install XcodeGen if not present (via Homebrew)
+2. Generate `project.yml` with your project name
+3. Run `xcodegen generate` to create the `.xcodeproj`
+4. Optionally open Xcode
+
+**Manual setup:**
+```bash
+# Install XcodeGen
+brew install xcodegen
+
+# Generate project
+xcodegen generate
+
+# Open in Xcode
+open AppleTemplate.xcodeproj
+```
 
 ### Package Resolution
 
