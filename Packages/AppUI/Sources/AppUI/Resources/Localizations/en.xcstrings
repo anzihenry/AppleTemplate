@@ -1,0 +1,126 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "Home": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Home"
+          }
+        }
+      ]
+    },
+    "Settings": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        }
+      ]
+    },
+    "Account": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Account"
+          }
+        }
+      ]
+    },
+    "Username": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Username"
+          }
+        }
+      ]
+    },
+    "Appearance": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appearance"
+          }
+        }
+      ]
+    },
+    "Dark Mode": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dark Mode"
+          }
+        }
+      ]
+    },
+    "Font Size": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Font Size"
+          }
+        }
+      ]
+    },
+    "Notifications": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Notifications"
+          }
+        }
+      ]
+    },
+    "Enable Notifications": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enable Notifications"
+          }
+        }
+      ]
+    },
+    "Save Settings": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save Settings"
+          }
+        }
+      ]
+    },
+    "Error": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Error"
+          }
+        }
+      ]
+    },
+    "OK": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "OK"
+          }
+        }
+      ]
+    }
+  },
+  "version": "1.0"
+}

@@ -1,0 +1,126 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "Home": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "首页"
+          }
+        }
+      ]
+    },
+    "Settings": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "设置"
+          }
+        }
+      ]
+    },
+    "Account": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "账户"
+          }
+        }
+      ]
+    },
+    "Username": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "用户名"
+          }
+        }
+      ]
+    },
+    "Appearance": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "外观"
+          }
+        }
+      ]
+    },
+    "Dark Mode": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "深色模式"
+          }
+        }
+      ]
+    },
+    "Font Size": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "字体大小"
+          }
+        }
+      ]
+    },
+    "Notifications": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "通知"
+          }
+        }
+      ]
+    },
+    "Enable Notifications": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "启用通知"
+          }
+        }
+      ]
+    },
+    "Save Settings": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存设置"
+          }
+        }
+      ]
+    },
+    "Error": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "错误"
+          }
+        }
+      ]
+    },
+    "OK": {
+      "localizations": [
+        {
+          "stringUnit": {
+            "state": "translated",
+            "value": "确定"
+          }
+        }
+      ]
+    }
+  },
+  "version": "1.0"
+}
