@@ -192,6 +192,109 @@ GitHub Actions runs on every push and PR:
 4. Compose into `AppFeature` using `Scope` or `forEach`
 5. Add to the appropriate platform entry point
 
+## Roadmap
+
+The following features are planned for future iterations:
+
+### Networking
+- [ ] Auth/token management (Bearer token, refresh token flow)
+- [ ] Request interceptors and response decoders
+- [ ] Retry logic with exponential backoff
+- [ ] Timeout configuration per endpoint
+- [ ] Generic response decoding (`Codable` support)
+- [ ] Multipart/form-data and file upload
+- [ ] WebSocket support
+- [ ] Offline request queue
+
+### Persistence
+- [ ] SwiftData schema migrations
+- [ ] Repository pattern abstraction
+- [ ] Query builders and predicates
+- [ ] Domain ↔ Persistence model mappers
+- [ ] Cache invalidation strategies
+- [ ] Offline sync and conflict resolution
+
+### Error Handling
+- [ ] Centralized error type hierarchy
+- [ ] Error-to-user-message mapping
+- [ ] Built-in retry mechanisms in UI
+- [ ] Network reachability monitoring
+
+### Security
+- [ ] SSL certificate pinning
+- [ ] Biometric authentication (Face ID / Touch ID)
+- [ ] App Attest integration
+- [ ] Secure Enclave key storage
+- [ ] Jailbreak/root detection
+
+### Analytics & Monitoring
+- [ ] Event tracking infrastructure
+- [ ] Crash reporting (Sentry / Crashlytics)
+- [ ] Screen view tracking
+- [ ] Performance monitoring
+
+### Push Notifications
+- [ ] APNs registration and handling
+- [ ] Notification action handling
+- [ ] Deep linking / universal links
+
+### Testing
+- [ ] Unit tests for all features (TestStore)
+- [ ] Unit tests for data layer services
+- [ ] Integration tests
+- [ ] UI / snapshot tests
+- [ ] Mock implementations for Keychain and UserDefaults
+
+### Accessibility
+- [ ] VoiceOver labels on all components
+- [ ] Dynamic Type support
+- [ ] Accessibility identifiers for UI testing
+
+### Performance
+- [ ] Image caching layer
+- [ ] Pagination patterns (cursor / offset)
+- [ ] Lazy loading and virtualization
+- [ ] Memory leak detection setup
+
+### App Lifecycle
+- [ ] Scene delegate handling
+- [ ] Background task management
+- [ ] App state persistence and restore
+
+### Feature Flags & Remote Config
+- [ ] Remote configuration service
+- [ ] A/B testing infrastructure
+- [ ] Feature flag system
+
+### CI/CD Enhancements
+- [ ] SPM dependency caching
+- [ ] Build artifact upload
+- [ ] Code coverage reporting
+- [ ] tvOS and watchOS CI jobs
+- [ ] TestFlight distribution
+- [ ] App Store Connect deployment
+- [ ] Automatic version bumping
+- [ ] Changelog generation
+
+### Build Configuration
+- [ ] Debug / Release / Staging environment configs
+- [ ] `.xcconfig` file setup
+- [ ] Environment-specific API endpoints
+
+### Resources & Assets
+- [ ] Asset Catalog (`.xcassets`) with AppIcon
+- [ ] SF Symbol catalog
+- [ ] Launch screen configuration
+
+### App Extensions
+- [ ] Widget extension template
+- [ ] Live Activities support
+- [ ] Siri Shortcuts / App Intents
+
+### Documentation
+- [ ] DocC documentation
+- [ ] Architecture Decision Records (ADRs)
+
 ## License
 
 MIT
