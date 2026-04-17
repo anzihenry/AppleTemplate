@@ -71,16 +71,16 @@ name: $PROJECT_NAME
 options:
   bundleIdPrefix: com.biucing
   deploymentTarget:
-    iOS: "17.0"
-    macOS: "14.0"
-    watchOS: "10.0"
-    tvOS: "17.0"
-  xcodeVersion: "15.0"
+    iOS: "26.0"
+    macOS: "26.0"
+    watchOS: "26.0"
+    tvOS: "26.0"
+  xcodeVersion: "26.0"
   createIntermediateGroups: true
 
 settings:
   base:
-    SWIFT_VERSION: "5.10"
+    SWIFT_VERSION: "6.2"
     GENERATE_INFOPLIST_FILE: YES
 
 packages:

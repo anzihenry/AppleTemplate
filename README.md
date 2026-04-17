@@ -4,10 +4,10 @@ A multi-platform Apple application template built with SwiftUI and The Composabl
 
 ## Platforms
 
-- iOS 17+
-- macOS 14+
-- watchOS 10+
-- tvOS 17+
+- iOS 26+
+- macOS 26+
+- watchOS 26+
+- tvOS 26+
 
 ## Tech Stack
 
@@ -52,9 +52,9 @@ AppleTemplate/
 
 ### Prerequisites
 
-- Xcode 15.2+
-- Swift 5.10+
-- macOS 14+
+- Xcode 26+
+- Swift 6.2+
+- macOS 26+
 
 ### Setup
 

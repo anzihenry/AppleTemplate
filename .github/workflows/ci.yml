@@ -9,7 +9,7 @@ on:
 jobs:
   lint:
     name: SwiftLint
-    runs-on: macos-14
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
       - name: Install SwiftLint
@@ -19,7 +19,7 @@ jobs:
 
   format:
     name: SwiftFormat
-    runs-on: macos-14
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
       - name: Install SwiftFormat
@@ -29,11 +29,11 @@ jobs:
 
   build:
     name: Build
-    runs-on: macos-14
+    runs-on: macos-26
     strategy:
       matrix:
         destination:
-          - "platform=iOS Simulator,name=iPhone 15,OS=17.2"
+          - "platform=iOS Simulator,name=iPhone 17,OS=26.0"
           - "platform=macOS,arch=arm64"
     steps:
       - uses: actions/checkout@v4
@@ -55,7 +55,7 @@ jobs:
 
   test:
     name: Test
-    runs-on: macos-14
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
       - name: Install XcodeGen
@@ -69,7 +69,7 @@ jobs:
           xcodebuild test \
             -project AppleTemplate.xcodeproj \
             -scheme "AppleTemplate-Tests" \
-            -destination "platform=iOS Simulator,name=iPhone 15,OS=17.2" \
+            -destination "platform=iOS Simulator,name=iPhone 17,OS=26.0" \
             -configuration Debug \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO \
