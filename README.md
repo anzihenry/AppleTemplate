@@ -99,6 +99,26 @@ cd Packages/AppUI && swift package resolve
 cd Packages/AppData && swift package resolve
 ```
 
+## Validation
+
+To verify the template works correctly before using it:
+
+```bash
+# Run the validation script
+./validate.sh
+
+# Or with a custom project name
+./validate.sh MyApp
+```
+
+This will:
+1. Create a temporary project with your specified name
+2. Generate the Xcode project using XcodeGen
+3. Build for all four platforms (iOS, macOS, watchOS, tvOS)
+4. Clean up the temporary files automatically
+
+All builds must succeed for the template to be considered valid.
+
 ## Architecture
 
 ### TCA Pattern
@@ -181,8 +201,9 @@ GitHub Actions runs on every push and PR:
 
 - **Lint**: SwiftLint code analysis
 - **Format**: SwiftFormat style check
-- **Build**: Xcode build for iOS and macOS
-- **Test**: Unit test execution
+- **Validate**: Template validation (generates sample project and builds for all platforms)
+- **Build**: Xcode build for iOS, macOS, watchOS, and tvOS
+- **Test**: Unit test execution (optional, pending test implementation)
 
 ## Adding a New Feature
 
@@ -270,7 +291,7 @@ The following features are planned for future iterations:
 - [ ] SPM dependency caching
 - [ ] Build artifact upload
 - [ ] Code coverage reporting
-- [ ] tvOS and watchOS CI jobs
+- [x] tvOS and watchOS CI jobs
 - [ ] TestFlight distribution
 - [ ] App Store Connect deployment
 - [ ] Automatic version bumping
