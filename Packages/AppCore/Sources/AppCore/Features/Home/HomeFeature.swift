@@ -8,6 +8,7 @@ public struct HomeFeature {
         public var items: [Item] = []
         public var isLoading = false
         public var errorMessage: String?
+        public var path = StackState<DetailFeature.State>()
 
         public init() {}
     }
@@ -18,6 +19,7 @@ public struct HomeFeature {
         case loadItemsResponse(Result<[Item], Error>)
         case itemTapped(Item)
         case refresh
+        case path(StackActionOf<DetailFeature>)
     }
 
     @Dependency(\.itemService) var itemService
@@ -52,14 +54,21 @@ public struct HomeFeature {
                 state.isLoading = false
                 return .none
 
-            case .itemTapped:
+            case .itemTapped(let item):
+                state.path.append(DetailFeature.State(item: item))
                 return .none
 
             case .refresh:
                 return .run { send in
                     await send(.loadItems)
                 }
+
+            case .path:
+                return .none
             }
+        }
+        .forEach(\.path, action: \.path) {
+            DetailFeature()
         }
     }
 }

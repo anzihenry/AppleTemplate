@@ -14,7 +14,6 @@ public struct AppFeature {
     public struct State: Equatable {
         public var home = HomeFeature.State()
         public var settings = SettingsFeature.State()
-        public var path = StackState<DetailFeature.State>()
         public var selectedTab: AppTab = .home
 
         public init() {}
@@ -23,7 +22,6 @@ public struct AppFeature {
     public enum Action {
         case home(HomeFeature.Action)
         case settings(SettingsFeature.Action)
-        case path(StackActionOf<DetailFeature>)
         case selectedTab(AppTab)
     }
 
@@ -41,12 +39,9 @@ public struct AppFeature {
             case .selectedTab(let tab):
                 state.selectedTab = tab
                 return .none
-            case .home, .settings, .path:
+            case .home, .settings:
                 return .none
             }
-        }
-        .forEach(\.path, action: \.path) {
-            DetailFeature()
         }
     }
 }

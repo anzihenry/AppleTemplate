@@ -48,11 +48,15 @@ jobs:
     needs: [lint, format]
     strategy:
       matrix:
-        destination:
-          - "platform=iOS Simulator,name=iPhone 17,OS=26.0"
-          - "platform=macOS,arch=arm64"
-          - "platform=watchOS Simulator,name=Apple Watch Ultra 2 (49mm),OS=26.0"
-          - "platform=tvOS Simulator,name=Apple TV,OS=26.0"
+        include:
+          - scheme: "AppleTemplate-iOS"
+            destination: "platform=iOS Simulator,name=iPhone 17,OS=26.0"
+          - scheme: "AppleTemplate-macOS"
+            destination: "platform=macOS,arch=arm64"
+          - scheme: "AppleTemplate-watchOS"
+            destination: "platform=watchOS Simulator,name=Apple Watch Ultra 2 (49mm),OS=26.0"
+          - scheme: "AppleTemplate-tvOS"
+            destination: "platform=tvOS Simulator,name=Apple TV,OS=26.0"
     steps:
       - uses: actions/checkout@v4
       - name: Install XcodeGen
@@ -65,7 +69,7 @@ jobs:
         run: |
           xcodebuild build \
             -project AppleTemplate.xcodeproj \
-            -scheme "AppleTemplate-iOS" \
+            -scheme "${{ matrix.scheme }}" \
             -destination "${{ matrix.destination }}" \
             -configuration Debug \
             CODE_SIGN_IDENTITY="" \
